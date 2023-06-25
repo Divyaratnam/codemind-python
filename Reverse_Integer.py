@@ -1,6 +1,11 @@
+def reve(n):
+    k=str(n)
+    return int(k[-1::-1])
 n=int(input())
 s=str(n)
 if s[0]=='-':
-    print(int('-'+s[:0:-1]))
+    r=reve(int(s[1::]))
+    print(-r)
 else:
-    print(int(s[::-1]))
+    r=reve(n)
+    print(r)
